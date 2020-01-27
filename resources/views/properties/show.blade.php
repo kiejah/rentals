@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
@@ -37,7 +36,7 @@
                 <div class="card-body">
                         <div class="row">
                         <div class="col-md-6">
-                            <img class="img-fluid" src="{{url('/').'/images/1550905415_20.jpg'}}" style="max-height:300px"/>
+                            <img class="img-fluid" src="{{url('/').'/images/1550905415_20.jpg'}}"/>
                         </div>
 
 
@@ -117,5 +116,4 @@
             </div>
         </div>
     </div>
-</div>
 @endsection

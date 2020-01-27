@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
@@ -11,11 +10,11 @@
                         <a class="navbar-brand" href="{{ route('units.index') }}">
                             <i class="fa fa-trello"></i>&nbsp;Units
                         </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent2">
                                 <!-- Left Side Of Navbar -->
                                 <ul class="navbar-nav mr-auto">
                                    <li class="nav-item">
@@ -56,5 +55,5 @@
             </div>
         </div>
     </div>
-</div>
+
 @endsection

@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
@@ -73,7 +72,7 @@
                             <td>{{$tenant->property->name}}</td>                            
                             <td>{{$tenant->unit->unit_house_number}}</td>
 
-                            <td><small><a href="#"><i class="fa fa-eye"></i></a></small></td>
+                            <td><small><a href="tenants/{{$tenant->id}}"><i class="fa fa-eye"></i></a></small></td>
                             <td><small><a class="text-success" href="tenants/{{$tenant->id}}/edit"><i class="fa fa-pencil"></i></a></small></td>
                             <td><small><a class="text-danger" href="#"><i class="fa fa-close"></i></a></small></td>
                         </tr>
@@ -92,5 +91,4 @@
             </div>
         </div>
     </div>
-</div>
 @endsection

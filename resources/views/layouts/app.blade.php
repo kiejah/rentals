@@ -23,7 +23,7 @@
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="w-100 p-3 container">
+            <div class="w-100 container-fluid">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <i class="fa fa-home"></i>&nbsp;Home
                 </a>
@@ -86,9 +86,12 @@
             </div>
         </nav>
 
-        <main class="py-4">
-            @yield('content')
-        </main>
+        {{--  <main class="py-4">  --}}
+        <div class="container-fluid">
+        @yield('content')
+        </div>
+            
+        {{--  </main>  --}}
     </div>
 </body>
 

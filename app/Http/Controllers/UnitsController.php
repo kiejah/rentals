@@ -122,7 +122,12 @@ class UnitsController extends Controller
      */
     public function show($id)
     {
-        //
+        $unit= Unit::find($id);
+        return view('units.show',['unit'=>$unit,
+        'properties'=>$this->properties,
+        'unit_types'=>$this->unit_types,
+        'tenants'=>$this->tenants]
+        );
     }
 
     /**

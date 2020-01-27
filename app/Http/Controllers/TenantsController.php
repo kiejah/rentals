@@ -107,6 +107,10 @@ class TenantsController extends Controller
     public function show($id)
     {
         //
+        $tenant= Tenant::find($id);
+        return view(
+            'tenants.show',['unit'=>$tenant]
+        );
     }
 
     /**

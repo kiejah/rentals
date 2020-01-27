@@ -19,12 +19,12 @@
                         
                             <td>{{$unit->property->name}}</td>
                             <td>{{$unit->unit_house_number}}</td>
-                            <td>{{$unit->unitType->unit_type_name}}<br>
+                            <td><b>{{$unit->unitType->unit_type_name}}</b>
                                 <small>{{$unit->unitType->standard}}</small>
                             </td>
                             <td>{{$unit->rent_charge}}</td>
                             <td>{{$unit->occupancy}}</td>
-                            <td><a href="{{ route('tenants.show', ['id' => $unit->tenant['id']]) }}">{{$unit->tenant['surname']." ".$unit->tenant['firstname'] }}</a></td>
+                            <td><b>{{$unit->tenant['surname']." ".$unit->tenant['firstname'] }}</b></td>
                             
                             <td><small>
                                 @if($unit->tenant_id < 1)
@@ -32,7 +32,7 @@
                                 @endif
                                 
                             </a></small></td>
-                            <td><small><a href="#"><i class="fa fa-eye"></i></a></small></td>
+                            <td><small><a href="/units/{{$unit->id}}"><i class="fa fa-eye"></i></a></small></td>
                             <td><small><a class="text-success" href="/units/{{$unit->id}}/edit"><i class="fa fa-pencil"></i></a></small></td>
                             <td><small><a class="text-danger" href="#"><i class="fa fa-close"></i></a></small></td>
                         </tr>
